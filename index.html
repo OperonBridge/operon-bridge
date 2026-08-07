@@ -20,7 +20,7 @@
         extend: {
           fontFamily: {
             sans: ['"Space Grotesk"', 'sans-serif'],
-            mono: ['"Space Grotesk"', 'monospace'], // Unifying the terminal font to match the tech vibe
+            mono: ['"Space Grotesk"', 'monospace'],
           }
         }
       }
@@ -82,59 +82,68 @@
           <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
         </button>
 
-        <a href="#waitlist" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-xs font-bold transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]">
+        <a href="#bridge" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-xs font-bold transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]">
           BOOK PILOT
         </a>
       </div>
     </nav>
   </div>
 
-  <div class="relative z-10 pt-32"> <header id="hero" class="max-w-4xl mx-auto pb-16 text-center px-4">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-emerald-600/30 dark:border-emerald-500/30 rounded-full bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs font-bold tracking-widest uppercase transition-colors">
-        <span class="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse"></span>
-        7-Day Live Pilot Guarantee
+  <div class="relative z-10 pt-32"> 
+
+    <header id="hero" class="max-w-4xl mx-auto pt-16 pb-32 text-center px-4">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-slate-300 dark:border-gray-700 rounded-full bg-white/50 dark:bg-gray-800/50 text-slate-600 dark:text-gray-400 text-[10px] font-bold tracking-widest uppercase transition-colors">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse"></span>
+        Currently in Private Beta
       </div>
-      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight leading-tight">
-        Stop the Manual Grind. <br />
+
+      <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-[1.1]">
+        Stop the <br class="hidden md:block"/>Manual Grind. <br />
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-500 dark:from-blue-400 dark:via-teal-300 dark:to-emerald-400">
-          Bridge the BPO Chasm.
+          Bridge the Chasm.
         </span>
       </h1>
-      <p class="text-slate-600 dark:text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed transition-colors">
-        Operon Bridge deploys autonomous AI agents directly into your legacy desktop software, mainframes, and web portals. Zero APIs required. Zero-trust compliant. Fully live in 7 days.
+
+      <p class="text-slate-600 dark:text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed transition-colors font-medium">
+        Deploy autonomous AI agents directly into your legacy desktop software and mainframes. Zero APIs required.
       </p>
 
-      <div id="waitlist" class="bg-white/80 dark:bg-[#16181D]/80 backdrop-blur-md p-2 border border-slate-200 dark:border-gray-800 rounded-full flex flex-col sm:flex-row max-w-lg mx-auto shadow-2xl dark:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] focus-within:border-blue-500/60 transition-colors">
-        <input type="email" placeholder="Enter your business email" class="bg-transparent pl-6 pr-4 py-3 flex-grow outline-none text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 w-full font-sans" required />
-        <button class="bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-500 text-white px-8 py-3 rounded-full font-bold text-sm transition-all whitespace-nowrap transform hover:scale-105 mt-2 sm:mt-0 flex items-center justify-center gap-2">
-          <span>Request 7-Day Pilot</span>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="#bridge" class="bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-500 text-white px-10 py-4 rounded-full font-bold text-sm transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_35px_rgba(37,99,235,0.5)] flex items-center justify-center gap-2 w-full sm:w-auto transform hover:scale-105">
+          <span>REQUEST 7-DAY PILOT</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-        </button>
+        </a>
+        
+        <a href="#bridge" class="text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white font-semibold text-sm transition-colors flex items-center gap-2">
+          <span>See how it works</span>
+          <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </a>
       </div>
-      <p class="text-xs text-slate-500 dark:text-gray-500 mt-5 uppercase tracking-[0.15em] font-mono transition-colors">Join 40+ BPO & Fintech Leaders in Private Beta</p>
+      
     </header>
 
-    <section id="bridge" class="max-w-4xl mx-auto px-6 mb-24">
-      <div class="bg-slate-100/90 dark:bg-[#010101]/90 backdrop-blur-xl rounded-xl border border-slate-300 dark:border-gray-800 p-6 shadow-2xl relative overflow-hidden transition-colors">
+    <section id="bridge" class="max-w-4xl mx-auto px-6 mb-32">
+      <div class="bg-slate-100/90 dark:bg-[#010101]/90 backdrop-blur-xl rounded-2xl border border-slate-300 dark:border-gray-800 p-8 shadow-2xl relative overflow-hidden transition-colors">
         <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50"></div>
-        <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center justify-between mb-8">
           <div class="flex space-x-2">
-            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+            <div class="w-3.5 h-3.5 rounded-full bg-red-500/80"></div>
+            <div class="w-3.5 h-3.5 rounded-full bg-yellow-500/80"></div>
+            <div class="w-3.5 h-3.5 rounded-full bg-green-500/80"></div>
           </div>
-          <div class="flex items-center gap-2 text-xs font-mono tracking-widest text-slate-500 dark:text-gray-500 uppercase">
+          <div class="flex items-center gap-2 text-[11px] font-mono tracking-widest text-slate-500 dark:text-gray-500 uppercase">
             <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
             <span>operon-bridge-agent --v2.4</span>
           </div>
         </div>
-        <div class="font-mono text-[13px] md:text-sm space-y-3 leading-relaxed">
+        <div class="font-mono text-[13px] md:text-sm space-y-4 leading-relaxed">
           <p class="text-blue-700 dark:text-blue-400">$ operon-bridge deploy --target="Legacy ERP (Mainframe)" --sprint=7days</p>
           <p class="text-slate-600 dark:text-gray-400">> Day 1: Visual UI Mapping & SOP Calibration... <span class="text-emerald-600 dark:text-emerald-400 font-bold">[COMPLETE]</span></p>
           <p class="text-slate-600 dark:text-gray-400">> Day 3: Air-Gapped Zero-Trust Security Enforced... <span class="text-emerald-600 dark:text-emerald-400 font-bold">[PASS]</span></p>
           <p class="text-slate-600 dark:text-gray-400">> Day 5: Autonomous Reconciliation Test... <span class="text-emerald-600 dark:text-emerald-400 font-bold">[DETERMINISTIC VERIFIED]</span></p>
           <p class="text-slate-600 dark:text-gray-400">> Day 7: Live Production Deployment... <span class="text-emerald-600 dark:text-emerald-400 font-bold">[ONLINE]</span></p>
-          <div class="mt-5 p-5 bg-emerald-100/50 dark:bg-emerald-500/10 border border-emerald-300 dark:border-emerald-500/20 rounded-lg space-y-2 transition-colors">
+          <div class="mt-6 p-5 bg-emerald-100/50 dark:bg-emerald-500/10 border border-emerald-300 dark:border-emerald-500/20 rounded-xl space-y-2 transition-colors">
             <p class="text-emerald-700 dark:text-emerald-400 font-bold text-xs uppercase tracking-[0.15em] flex items-center gap-2 mb-3">
               <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               <span>LIVE BENCHMARK RESULTS</span>
@@ -143,36 +152,36 @@
             <p class="text-slate-700 dark:text-gray-300 text-xs tracking-wide">Manual Data Entry Saved: 42 Hours / Week per Operator</p>
             <p class="text-slate-700 dark:text-gray-300 text-xs tracking-wide">Human Exception Escalation: 0.00%</p>
           </div>
-          <p class="text-slate-500 dark:text-gray-500 text-xs pt-3 tracking-widest uppercase">@operon-system:~# <span class="text-slate-900 dark:text-white">agent active --listening</span><span class="cursor-blink"> █</span></p>
+          <p class="text-slate-500 dark:text-gray-500 text-xs pt-4 tracking-widest uppercase">@operon-system:~# <span class="text-slate-900 dark:text-white">agent active --listening</span><span class="cursor-blink"> █</span></p>
         </div>
       </div>
     </section>
 
-    <section id="ops" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-200 dark:border-gray-900 transition-colors">
-      <div class="text-center mb-12">
-        <h2 class="text-xs font-mono text-blue-600 dark:text-blue-400 uppercase tracking-[0.2em] mb-2 font-bold">Core Platform</h2>
-        <p class="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Built for Legacy Constraints</p>
+    <section id="ops" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-200 dark:border-gray-900 transition-colors">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-mono text-blue-600 dark:text-blue-400 uppercase tracking-[0.2em] mb-3 font-bold">Core Platform</h2>
+        <p class="text-4xl font-bold text-slate-900 dark:text-white tracking-tight">Built for Legacy Constraints</p>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white/80 dark:bg-[#111318]/80 backdrop-blur-md p-8 rounded-2xl border border-slate-200 dark:border-gray-800/80 hover:border-blue-400 dark:hover:border-blue-500/40 transition">
-          <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6 transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <div class="bg-white/80 dark:bg-[#111318]/80 backdrop-blur-md p-10 rounded-3xl border border-slate-200 dark:border-gray-800/80 hover:border-blue-400 dark:hover:border-blue-500/40 transition">
+          <div class="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-8 transition-colors">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
-          <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white tracking-tight">7-Day Pilot Sprint</h3>
+          <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white tracking-tight">7-Day Pilot Sprint</h3>
           <p class="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">Skip 6-month consulting cycles. Our visual vision agents map your existing software interfaces and deploy active automation within 7 days.</p>
         </div>
-        <div class="bg-white/80 dark:bg-[#111318]/80 backdrop-blur-md p-8 rounded-2xl border border-slate-200 dark:border-gray-800/80 hover:border-emerald-400 dark:hover:border-emerald-500/40 transition">
-          <div class="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-6 transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <div class="bg-white/80 dark:bg-[#111318]/80 backdrop-blur-md p-10 rounded-3xl border border-slate-200 dark:border-gray-800/80 hover:border-emerald-400 dark:hover:border-emerald-500/40 transition">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-8 transition-colors">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </div>
-          <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white tracking-tight">Zero-API Required</h3>
+          <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white tracking-tight">Zero-API Required</h3>
           <p class="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">Operon Bridge navigates software like a senior employee—visually identifying elements, reading PDFs, and executing complex workflows across mainframes.</p>
         </div>
-        <div class="bg-white/80 dark:bg-[#111318]/80 backdrop-blur-md p-8 rounded-2xl border border-slate-200 dark:border-gray-800/80 hover:border-purple-400 dark:hover:border-purple-500/40 transition">
-          <div class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-500/10 border border-purple-200 dark:border-purple-500/20 flex items-center justify-center text-purple-600 dark:text-purple-400 mb-6 transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+        <div class="bg-white/80 dark:bg-[#111318]/80 backdrop-blur-md p-10 rounded-3xl border border-slate-200 dark:border-gray-800/80 hover:border-purple-400 dark:hover:border-purple-500/40 transition">
+          <div class="w-14 h-14 rounded-2xl bg-purple-50 dark:bg-purple-500/10 border border-purple-200 dark:border-purple-500/20 flex items-center justify-center text-purple-600 dark:text-purple-400 mb-8 transition-colors">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
           </div>
-          <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white tracking-tight">Deterministic Execution</h3>
+          <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white tracking-tight">Deterministic Output</h3>
           <p class="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">Agentic workflows that do not "guess." We utilize self-correction loops to ensure unstructured BPO data is handled with 100% audit readiness.</p>
         </div>
       </div>
@@ -183,53 +192,53 @@
         <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-blue-200 dark:border-blue-500/30 rounded text-blue-700 dark:text-blue-400 text-[10px] font-bold tracking-[0.2em] uppercase bg-blue-50 dark:bg-blue-500/5 transition-colors">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 mb-6 border border-blue-200 dark:border-blue-500/30 rounded-lg text-blue-700 dark:text-blue-400 text-[10px] font-bold tracking-[0.2em] uppercase bg-blue-50 dark:bg-blue-500/5 transition-colors">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                         Enterprise-Grade Protocol
                     </div>
-                    <h2 class="text-4xl font-extrabold mb-6 tracking-tight text-slate-900 dark:text-white">Zero-Trust Isolation <br/><span class="text-slate-500 dark:text-gray-500 font-medium">Built for Fintech & BPO.</span></h2>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-slate-900 dark:text-white leading-tight">Zero-Trust Isolation <br/><span class="text-slate-500 dark:text-gray-500 font-medium">Built for Fintech & BPO.</span></h2>
                     <p class="text-slate-600 dark:text-gray-400 text-lg leading-relaxed mb-8 transition-colors">
                         Legacy systems contain sensitive PII. Operon Bridge does not aggregate your client's data into a vulnerable central cloud. We deploy isolated, air-gapped Agentic Vaults that read screens and execute tasks without exposing underlying databases.
                     </p>
-                    <ul class="space-y-4 font-mono text-sm text-slate-700 dark:text-gray-300">
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <ul class="space-y-5 font-mono text-sm text-slate-700 dark:text-gray-300">
+                        <li class="flex items-center gap-4">
+                            <div class="p-1 rounded-full bg-emerald-100 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
                             SOC2 & PCI-DSS Audit Ready Out-of-the-Box
                         </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <li class="flex items-center gap-4">
+                            <div class="p-1 rounded-full bg-emerald-100 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
                             Air-Gapped Execution Environments
                         </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <li class="flex items-center gap-4">
+                            <div class="p-1 rounded-full bg-emerald-100 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
                             No Persistent Storage of Client Legacy Data
                         </li>
                     </ul>
                 </div>
-                <div class="bg-slate-50 dark:bg-[#111318] border border-slate-200 dark:border-gray-800 rounded-2xl p-8 shadow-2xl relative transition-colors">
-                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-blue-400/20 dark:bg-blue-500/20 blur-3xl rounded-full"></div>
+                <div class="bg-slate-50 dark:bg-[#111318] border border-slate-200 dark:border-gray-800 rounded-3xl p-10 shadow-2xl relative transition-colors">
+                    <div class="absolute -top-4 -right-4 w-32 h-32 bg-blue-400/20 dark:bg-blue-500/20 blur-3xl rounded-full"></div>
                     <div class="space-y-6 relative z-10">
-                        <div class="flex items-center justify-between p-5 border border-slate-300 dark:border-gray-700/50 bg-white dark:bg-[#1A1D24] rounded-xl transition-colors">
-                            <span class="text-[11px] font-bold text-slate-500 dark:text-gray-400 uppercase tracking-[0.15em]">Legacy Client ERP</span>
-                            <svg class="w-5 h-5 text-slate-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                        <div class="flex items-center justify-between p-5 border border-slate-300 dark:border-gray-700/50 bg-white dark:bg-[#1A1D24] rounded-2xl transition-colors">
+                            <span class="text-[12px] font-bold text-slate-500 dark:text-gray-400 uppercase tracking-[0.15em]">Legacy Client ERP</span>
+                            <svg class="w-6 h-6 text-slate-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-px h-8 bg-gradient-to-b from-slate-400 to-blue-500 dark:from-gray-700 dark:to-blue-500 relative">
-                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 border-2 border-blue-500 bg-white dark:bg-[#111318] rounded-full"></div>
+                            <div class="w-px h-10 bg-gradient-to-b from-slate-400 to-blue-500 dark:from-gray-700 dark:to-blue-500 relative">
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 border-2 border-blue-500 bg-white dark:bg-[#111318] rounded-full"></div>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between p-5 border border-blue-200 dark:border-blue-500/30 bg-blue-50 dark:bg-blue-500/5 rounded-xl shadow-[0_0_15px_rgba(59,130,246,0.1)] transition-colors">
-                            <span class="text-[11px] font-bold text-blue-700 dark:text-blue-400 uppercase tracking-[0.15em]">Operon Air-Gapped Vault</span>
-                            <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        <div class="flex items-center justify-between p-5 border border-blue-200 dark:border-blue-500/30 bg-blue-50 dark:bg-blue-500/5 rounded-2xl shadow-[0_0_20px_rgba(59,130,246,0.15)] transition-colors transform hover:scale-105 transition-transform duration-300">
+                            <span class="text-[12px] font-bold text-blue-700 dark:text-blue-400 uppercase tracking-[0.15em]">Operon Air-Gapped Vault</span>
+                            <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                         </div>
                         <div class="flex justify-center">
-                            <div class="w-px h-8 bg-gradient-to-b from-blue-500 to-emerald-500 relative">
-                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 border-2 border-emerald-500 bg-white dark:bg-[#111318] rounded-full"></div>
+                            <div class="w-px h-10 bg-gradient-to-b from-blue-500 to-emerald-500 relative">
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 border-2 border-emerald-500 bg-white dark:bg-[#111318] rounded-full"></div>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between p-5 border border-emerald-200 dark:border-emerald-500/30 bg-emerald-50 dark:bg-emerald-500/5 rounded-xl shadow-[0_0_15px_rgba(16,185,129,0.1)] transition-colors">
-                            <span class="text-[11px] font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-[0.15em]">Modern Cloud Destination</span>
-                            <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                        <div class="flex items-center justify-between p-5 border border-emerald-200 dark:border-emerald-500/30 bg-emerald-50 dark:bg-emerald-500/5 rounded-2xl shadow-[0_0_15px_rgba(16,185,129,0.1)] transition-colors">
+                            <span class="text-[12px] font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-[0.15em]">Modern Cloud Destination</span>
+                            <svg class="w-6 h-6 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
                         </div>
                     </div>
                 </div>
@@ -237,42 +246,42 @@
         </div>
     </section>
 
-    <section id="sprint" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-200 dark:border-gray-900 transition-colors">
+    <section id="sprint" class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-gray-900 transition-colors">
       <div class="text-center mb-16">
-        <h2 class="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-[0.2em] mb-2 font-bold">The Deployment Protocol</h2>
-        <p class="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">From Onboarding to Autonomous Flow</p>
+        <h2 class="text-xs font-mono text-emerald-600 dark:text-emerald-400 uppercase tracking-[0.2em] mb-3 font-bold">The Deployment Protocol</h2>
+        <p class="text-4xl font-bold text-slate-900 dark:text-white tracking-tight">From Onboarding to Autonomous Flow</p>
       </div>
       <div class="grid md:grid-cols-4 gap-6 font-mono text-[11px] tracking-wide">
-        <div class="p-6 bg-white/60 dark:bg-[#16181D]/60 border border-slate-200 dark:border-gray-800 rounded-2xl shadow-sm dark:shadow-none transition-colors">
-          <div class="text-blue-600 dark:text-blue-400 font-bold mb-3 flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-            <span>DAY 01 - 02</span>
+        <div class="p-8 bg-white/60 dark:bg-[#16181D]/60 border border-slate-200 dark:border-gray-800 rounded-3xl shadow-sm dark:shadow-none transition-colors">
+          <div class="text-blue-600 dark:text-blue-400 font-bold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            <span class="text-[13px]">DAY 01 - 02</span>
           </div>
-          <h4 class="text-slate-900 dark:text-white text-sm font-sans font-bold mb-2 tracking-tight">SOP & Screen Calibration</h4>
+          <h4 class="text-slate-900 dark:text-white text-base font-sans font-bold mb-3 tracking-tight">SOP & Screen Calibration</h4>
           <p class="text-slate-600 dark:text-gray-400 leading-relaxed font-sans text-xs">We record the manual visual workflow. The vision engine grounds UI selectors and mapping paths.</p>
         </div>
-        <div class="p-6 bg-white/60 dark:bg-[#16181D]/60 border border-slate-200 dark:border-gray-800 rounded-2xl shadow-sm dark:shadow-none transition-colors">
-          <div class="text-blue-600 dark:text-blue-400 font-bold mb-3 flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-            <span>DAY 03 - 04</span>
+        <div class="p-8 bg-white/60 dark:bg-[#16181D]/60 border border-slate-200 dark:border-gray-800 rounded-3xl shadow-sm dark:shadow-none transition-colors">
+          <div class="text-blue-600 dark:text-blue-400 font-bold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <span class="text-[13px]">DAY 03 - 04</span>
           </div>
-          <h4 class="text-slate-900 dark:text-white text-sm font-sans font-bold mb-2 tracking-tight">Air-Gapped Vault Setup</h4>
+          <h4 class="text-slate-900 dark:text-white text-base font-sans font-bold mb-3 tracking-tight">Air-Gapped Vault Setup</h4>
           <p class="text-slate-600 dark:text-gray-400 leading-relaxed font-sans text-xs">Zero-Trust containers are provisioned with encryption layers to shield all PII and sensitive data.</p>
         </div>
-        <div class="p-6 bg-white/60 dark:bg-[#16181D]/60 border border-slate-200 dark:border-gray-800 rounded-2xl shadow-sm dark:shadow-none transition-colors">
-          <div class="text-blue-600 dark:text-blue-400 font-bold mb-3 flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            <span>DAY 05 - 06</span>
+        <div class="p-8 bg-white/60 dark:bg-[#16181D]/60 border border-slate-200 dark:border-gray-800 rounded-3xl shadow-sm dark:shadow-none transition-colors">
+          <div class="text-blue-600 dark:text-blue-400 font-bold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span class="text-[13px]">DAY 05 - 06</span>
           </div>
-          <h4 class="text-slate-900 dark:text-white text-sm font-sans font-bold mb-2 tracking-tight">Sandbox Stress Testing</h4>
+          <h4 class="text-slate-900 dark:text-white text-base font-sans font-bold mb-3 tracking-tight">Sandbox Stress Testing</h4>
           <p class="text-slate-600 dark:text-gray-400 leading-relaxed font-sans text-xs">Agents run full reconciliation cycles, testing visual self-correction loops against edge cases.</p>
         </div>
-        <div class="p-6 bg-emerald-50/50 dark:bg-emerald-500/5 border border-emerald-200 dark:border-emerald-500/40 rounded-2xl shadow-sm dark:shadow-none transition-colors">
-          <div class="text-emerald-600 dark:text-emerald-400 font-bold mb-3 flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-            <span>DAY 07</span>
+        <div class="p-8 bg-emerald-50/80 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/40 rounded-3xl shadow-lg dark:shadow-none transition-colors transform md:-translate-y-2">
+          <div class="text-emerald-600 dark:text-emerald-400 font-bold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-[13px]">DAY 07</span>
           </div>
-          <h4 class="text-slate-900 dark:text-white text-sm font-sans font-bold mb-2 tracking-tight">Live Production Hand-off</h4>
+          <h4 class="text-slate-900 dark:text-white text-base font-sans font-bold mb-3 tracking-tight">Live Production Hand-off</h4>
           <p class="text-slate-600 dark:text-gray-400 leading-relaxed font-sans text-xs">Autonomous flow goes live with real-time audit logging and human supervisor escalation triggers.</p>
         </div>
       </div>
@@ -298,7 +307,6 @@
   </div>
 
   <script>
-    // --- Theme Toggle Logic ---
     const themeToggleBtn = document.getElementById('theme-toggle');
     const darkIcon = document.getElementById('theme-toggle-dark-icon');
     const lightIcon = document.getElementById('theme-toggle-light-icon');
@@ -324,7 +332,6 @@
         }
     });
 
-    // --- Particle Canvas Engine ---
     const canvas = document.getElementById('particles-canvas');
     const ctx = canvas.getContext('2d');
     let width, height;
